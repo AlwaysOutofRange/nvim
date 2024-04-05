@@ -20,14 +20,6 @@ return {
     },
 
     {
-        "akinsho/bufferline.nvim",
-        event = "BufReadPre",
-        config = function()
-            require("configs.bufferline")
-        end,
-    },
-
-    {
         "nvim-tree/nvim-web-devicons",
         config = function()
             require("nvim-web-devicons").setup()
@@ -41,5 +33,20 @@ return {
             require("configs.dashboard")
         end,
         dependencies = { { "nvim-tree/nvim-web-devicons" } },
+    },
+
+    {
+        "romgrk/barbar.nvim",
+        dependencies = {
+            "lewis6991/gitsigns.nvim",
+            "nvim-tree/nvim-web-devicons",
+        },
+        opts = {
+            animations = true,
+            sidebar_filetypes = {
+                ["NvimTree"] = true,
+            },
+        },
+        version = "^1.0.0",
     },
 }

@@ -14,9 +14,9 @@ map("n", "<leader>e", "<cmd> NvimTreeToggle <CR>")
 map("n", "<leader>ff", "<cmd> Telescope find_files <CR>", { desc = "Find File" })
 map("n", "<leader>fg", "<cmd> Telescope live_grep <CR>", { desc = "Live Grep" })
 
-map("n", "<Tab>", "<cmd> BufferLineCycleNext <CR>")
-map("n", "<S-Tab>", "<cmd> BufferLineCyclePrev <CR>")
-map("n", "<leader>x", "<cmd> bd <CR>", { desc = "Delete buffer" })
+map("n", "<Tab>", "<cmd> BufferPrevious <CR>")
+map("n", "<S-Tab>", "<cmd> BufferNext <CR>")
+map("n", "<leader>x", "<cmd> BufferClose <CR>", { desc = "Delete buffer" })
 
 map("n", "<leader>/", function()
     require("Comment.api").toggle.linewise.current()
