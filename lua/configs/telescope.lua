@@ -4,6 +4,7 @@ require("telescope").setup({
         layout_config = {
             horizontal = { prompt_position = "top" },
         },
+        file_ignore_patterns = { "node_modules", ".git", "vendor", "__pycache__" },
     },
 
     extensions = {

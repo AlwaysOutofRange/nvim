@@ -71,6 +71,11 @@ lspconfig.lua_ls.setup({
 })
 
 lspconfig.gleam.setup({
+    capabilities = capabilities,
     cmd = { "/home/outofrange/Documents/Projects/glas/target/release/glas", "--stdio" },
     filetypes = { "gleam" },
+})
+
+lspconfig.phpactor.setup({
+  capabilities = capabilities,
 })
