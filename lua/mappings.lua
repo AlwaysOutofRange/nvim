@@ -14,8 +14,10 @@ map("n", "<leader>e", "<cmd> NvimTreeToggle <CR>")
 map("n", "<leader>ff", "<cmd> Telescope find_files <CR>", { desc = "Find File" })
 map("n", "<leader>fg", "<cmd> Telescope live_grep <CR>", { desc = "Live Grep" })
 
-map("n", "<Tab>", "<cmd> BufferPrevious <CR>")
-map("n", "<S-Tab>", "<cmd> BufferNext <CR>")
+map("n", "<leader>gg", "<cmd> Neogit <CR>", { desc = "Git" })
+
+map("n", "<Tab>", "<cmd> BufferNext <CR>")
+map("n", "<S-Tab>", "<cmd> BufferPrevious <CR>")
 map("n", "<leader>x", "<cmd> BufferClose <CR>", { desc = "Delete buffer" })
 
 map("n", "<leader>/", function()

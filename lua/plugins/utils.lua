@@ -46,4 +46,12 @@ return {
             })
         end,
     },
+
+    -- {
+    --     "IogaMaster/neocord",
+    --     event = "VeryLazy",
+    --     opts = {
+    --       show_time = false,
+    --     }
+    -- },
 }

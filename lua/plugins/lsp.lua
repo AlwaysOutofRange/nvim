@@ -65,14 +65,6 @@ return {
         cmd = { "ConformInfo" },
         dependencies = { "williamboman/mason.nvim" },
         config = function()
-            local ensure_installed = { "stylua", "prettier", "golines", "goimports", "shfmt" }
-            local registry = require("mason-registry")
-            for _, name in ipairs(ensure_installed) do
-                local package = registry.get_package(name)
-                if not package:is_installed() then
-                    package:install()
-                end
-            end
             require("configs.conform")
         end,
     },
